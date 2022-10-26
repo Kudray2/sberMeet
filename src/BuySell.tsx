@@ -50,7 +50,11 @@ return(
           </div>
         )})}
       </div>
-      <h4 key={`${summ}-h4`} style={{textAlign:'center'}} > Deal income: {summ}</h4>
+      {
+        summ
+        ?<h4 key={`${summ}-h4`} style={{textAlign:'center'}} > Deal income: {summ}</h4>
+         : <h4 key={`${summ}-h4`} style={{textAlign:'center', color:'red'}}>No deal</h4>
+      }
       </>
     )})}
 </>
