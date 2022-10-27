@@ -26,16 +26,6 @@ export const dealCloserIndex = (pricesByDays: number[]): BestDeal => {
      buy: 0,
      sell: 0, 
   }
-// pricesByDays.forEach( (buy, buyIndex) => {
-//   pricesByDays.forEach((sell, sellIndex = buyIndex) => { 
-//     let thisSum = sell - buy
-//     if ( thisSum > result.summ) { 
-//       result.summ = thisSum
-//       result.buy = buyIndex
-//       result.sell = sellIndex 
-//     }
-//   })
-// } )
 
 pricesByDays.forEach( (buy, buyIndex) => {
   for( let  i=buyIndex + 1; i <pricesByDays.length; i++){

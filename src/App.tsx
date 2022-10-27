@@ -5,10 +5,19 @@ import BuySell from "./BuySell";
 
 function App() {
 return (
-<div style={{ margin: "20vw"}}> 
+  <main
+  style={{
+    display: "flex",
+    flexDirection: 'column',
+    justifyContent: "space-between",
+    margin: "20vw",
+  }}
+>
+
 <Random data={data} />
 <BuySell data={data} dealCloser={dealCloserIndex}/>
-</div>
+
+</main>
 )
 }
 
